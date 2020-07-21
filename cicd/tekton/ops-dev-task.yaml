@@ -25,7 +25,7 @@ spec:
         cd ops/overlays/dev
         yq m -i -x kustomization.yaml - <<EOD
         images:
-          - name: springone-tour-2020-cicd/go-sample-app  # used for Kustomize matching
+          - name: fouadhamdi/go-sample-app  # used for Kustomize matching
             newTag: $(params.TAG)
         EOD
   - name: git-commit
